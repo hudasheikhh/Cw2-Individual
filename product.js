@@ -1,3 +1,5 @@
+// Defining 10 products as json objects 
+// Products is the json array object
 let products = [{
         id: 1001,
         subject: "English",
