@@ -211,7 +211,9 @@
                         if (products === this.products[j].subject) {
                             const index = this.cart.indexOf(this.products[j].id);
                             if (index > -1) {
-                                this.cart.splice(index, 1); //splice removes the element of the specified index 
+
+                                // splice removes the element of the specified index 
+                                this.cart.splice(index, 1);
                             }
                             this.products[j].dSpace += 1;
                         }
