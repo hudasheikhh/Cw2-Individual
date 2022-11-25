@@ -307,7 +307,7 @@
                 ProductList() {
 
                     this.checkBar = true
-                    if (this.SearchCourse.trim().length > 0) {
+                    if (this.SearchCourse.trim().length > 0) { //trim removes the white spaces 
                         return this.products.filter((products) => products.subject.toLowerCase().includes(this.SearchCourse.trim().toLowerCase()) || products.location.toLowerCase().includes(this.SearchCourse.trim().toLowerCase()))
                     } else {
 
