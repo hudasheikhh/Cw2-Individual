@@ -104,14 +104,14 @@
 
                 <h3>My CheckOut Page</h3>
                 <p>
-                    <strong> First Name: </strong>
-                    <!-- This input field is bound to 'firstName' in the 'order' object -->
-                    <input v-model.trim="order.firstName" />
+                    <strong> Name: </strong>
+                    <!-- This input field is bound to 'Name' in the 'order' object -->
+                    <input v-model.trim="order.Name" />
                 </p>
                 <p>
-                    <strong> Last Name: </strong>
-                    <!-- This input field is bound to 'lastName' in the 'order' object -->
-                    <input v-model.trim="order.lastName" />
+                    <strong> Phone Number: </strong>
+                    <!-- This input field is bound to 'Phone number' in the 'order' object -->
+                    <input v-model.trim="order.PhoneNumber" />
                 </p>
                 <!--Button for placing orders -->
                 <button v-on:click="submitForm">PLACE ORDER</button>
@@ -158,8 +158,8 @@
 
                 showProducts: true, //To display the product page
                 order: {
-                    firstName: '',
-                    lastName: ''
+                    Name: '',
+                    PhoneNumber: ''
 
                 },
                 classA: "Subject",
